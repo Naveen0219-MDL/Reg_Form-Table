@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SKCET Admission Form</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            background:#f4f4f4;
+        }
+
+        header{
+            background:#ff7b00;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+
+        .container{
+            width:60%;
+            margin:30px auto;
+            background:white;
+            padding:30px;
+            border-radius:10px;
+            box-shadow:0 0 10px rgba(0,0,0,0.2);
+        }
+
+        h2{
+            text-align:center;
+            color:#ff7b00;
+            margin-bottom:20px;
+        }
+
+        .form-group{
+            margin-bottom:15px;
+        }
+
+        label{
+            display:block;
+            margin-bottom:5px;
+            font-weight:bold;
+        }
+
+        input, select, textarea{
+            width:100%;
+            padding:10px;
+            border:1px solid #ccc;
+            border-radius:5px;
+        }
+
+        .radio-group,
+        .checkbox-group{
+            margin-top:5px;
+        }
+
+        .radio-group input,
+        .checkbox-group input{
+            width:auto;
+            margin-right:5px;
+        }
+
+        button{
+            width:100%;
+            background:#ff7b00;
+            color:white;
+            padding:12px;
+            border:none;
+            border-radius:5px;
+            font-size:16px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:#ff7b00;
+        }
+
+        footer{
+            background:#ff7b00;
+            color:white;
+            text-align:center;
+            padding:15px;
+            margin-top:20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Sri Krishna College of Engineering and Technology</h1>
+    <p>Admission Application Form</p>
+</header>
+
+<div class="container">
+
+    <h2>Student Registration Form</h2>
+
+    <form>
+
+        <div class="form-group">
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter your name" required>
+        </div>
+
+        <div class="form-group">
+            <label>Date of Birth</label>
+            <input type="date" required>
+        </div>
+
+        <div class="form-group">
+            <label>Gender</label>
+            <div class="radio-group">
+                <input type="radio" name="gender"> Male
+                <input type="radio" name="gender"> Female
+                <input type="radio" name="gender"> Other
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" placeholder="Enter email" required>
+        </div>
+
+        <div class="form-group">
+            <label>Mobile Number</label>
+            <input type="tel" placeholder="Enter mobile number" required>
+        </div>
+
+        <div class="form-group">
+            <label>Address</label>
+            <textarea rows="4" placeholder="Enter address"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label>Select Course</label>
+            <select required>
+                <option value="">--Select Course--</option>
+                <option>B.E Computer Science and Engineering</option>
+                <option>B.E Electronics and Communication Engineering</option>
+                <option>B.E Mechanical Engineering</option>
+                <option>B.E Electrical and Electronics Engineering</option>
+                <option>B.Tech Information Technology</option>
+                <option>M.E</option>
+                <option>MBA</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>12th Percentage</label>
+            <input type="number" min="0" max="100" placeholder="Enter percentage">
+        </div>
+
+        <div class="form-group">
+            <label>Upload Marksheet</label>
+            <input type="file">
+        </div>
+
+        <div class="form-group">
+            <label>Facilities Required</label>
+            <div class="checkbox-group">
+                <input type="checkbox"> Hostel
+                <input type="checkbox"> Transport
+                <input type="checkbox"> Sports
+                <input type="checkbox"> Library
+            </div>
+        </div>
+
+        <div class="form-group">
+            <button type="submit">Submit Application</button>
+        </div>
+
+    </form>
+
+</div>
+<center>
+<table border="1" style="border-collapse:separate; border-spacing:15px 0;">
+    <tr>
+        <th>Student Name</th>
+        <th>Course</th>
+        <th>12th %</th>
+    </tr>
+
+    <tr>
+        <td>Arun Kumar</td>
+        <td>CSE</td>
+        <td>92%</td>
+    </tr>
+
+    <tr>
+        <td>Priya</td>
+        <td>ECE</td>
+        <td>89%</td>
+    </tr>
+
+    <tr>
+        <td>Karthik</td>
+        <td>IT</td>
+        <td>95%</td>
+    </tr>
+    <tr>
+        <td>Naveen</td>
+        <td>CSE</td>
+        <td>97%</td>
+    </tr>
+    <tr>
+        <td>Sanjay</td>
+        <td>EEE</td>
+        <td>99%</td>
+    </tr>
+</table></center>
+<footer>
+    <p>&copy; 2026 SKCET Admission Portal | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
